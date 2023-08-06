@@ -200,26 +200,6 @@ img{
   top: calc(var(--header-height) + 1rem);
 }
 
-/* Active menu link */
-.active-link{
-  position: relative;
-}
-
-.active-link::before{
-  content: '';
-  position: absolute;
-  bottom: -.75rem;
-  left: 45%;
-  width: 5px;
-  height: 5px;
-  background-color: var(--title-color);
-  border-radius: 50%;
-}
-
-/* Change background header */
-.scroll-header{
-  box-shadow: 0 1px 4px rgba(0,0,0,.1);
-}
 
 /* Scroll top */
 .scrolltop{
