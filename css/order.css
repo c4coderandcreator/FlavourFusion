@@ -137,7 +137,7 @@ body {
   cursor: pointer;
 }
 .container-sam {
-  transform: translateX(-150%);
+  transform: translateX(-300%);
 }
 .container-sam.active {
   transform: translateX(0%);
