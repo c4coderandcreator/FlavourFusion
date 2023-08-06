@@ -219,7 +219,7 @@ body {
   .head-content-sam {
     padding: 5px;
   }
-  .container-sam {
+  .container-sam.active {
     height: 100vh;
   }
   .main-head-sam {
@@ -282,7 +282,7 @@ body {
     height: 30%;
   }
   .checkout-sam h1 {
-    font-size: 1.1rem !important;
+    font-size: 1.1rem;
     padding: 0;
   }
   .description-sam h3 {
