@@ -72,6 +72,9 @@ body{
   line-height: 1.6;
 }
 
+#order-now-sam{
+  cursor: pointer;
+}
 h1,h2,h3,ul,p{
   margin: 0;
 }
@@ -201,6 +204,11 @@ img{
 }
 
 
+/* Change background header */
+.scroll-header{
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+
 /* Scroll top */
 .scrolltop{
   position: fixed;
@@ -212,7 +220,7 @@ img{
   padding: .3rem;
   background: rgba(0, 255, 0, 0.575);
   border-radius: .4rem;
-  z-index: var(--z-tooltip);
+  z-index: 6969;
   transition: .4s;
   visibility: hidden;
 }

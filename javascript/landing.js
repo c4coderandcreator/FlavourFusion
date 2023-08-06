@@ -46,3 +46,4 @@ sr.reveal(`.food-fact__img, .send__content`, {
 sr.reveal(`.food-fact__data, .send__img`, {
     origin: 'right'
 })
+
