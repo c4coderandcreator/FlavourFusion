@@ -1,0 +1,47 @@
+#bg-sign-in{
+    background-image: url('../Resources/bg-signin-out.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#sign-in-content{
+    width: 50%;
+    background-color:rgb(75, 91, 62);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#sign-in-loco{
+    width: 40%;
+    height: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#sign-in-line{
+    border-left: 6px solid rgb(200, 223, 191);
+    height: 500px;
+    margin-left: 2%;
+    margin-right: 4%;
+  }
+
+#sign-in-element{
+    width: 40%;
+    height: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+   
+}
