@@ -1,19 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food-Web</title>
     <link
-    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-    rel="stylesheet"
-  />
-    <link rel="stylesheet" href="./css/landing.css">
-</head>
-<body>
-
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/order.css" />
+    <link rel="stylesheet" href="./css/landing.css" />
+  </head>
+  <body>
     <!--========== Scroll To Top By Navuuu ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--Navbar By Navuuu-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">FlavoursFusion</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#menu" class="nav__link">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#recipes" class="nav__link">Recipes</a>
+            </li>
+            <li class="nav__item">
+              <a href="#sign-in" class="nav__link sign-in-btn-nav">Sign In</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--First Section of Landing Page By Navuuu-->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__img">
+            <img src="./assets/salmon-salad.png" alt="" />
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">Plant Based Meat Salad</h1>
+            <p class="home__description">
+              Food Fusion Fun<br />
+              Where Tradition Meets Innovation and Healthy Meets Tasty!
+            </p>
+            <a href="#" class="landing-button">Order Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!--Second Section of Landing Page by Navuuu-->
+      <section class="food-fact section bd-container" id="#">
+        <div class="food-fact__container bd-grid">
+          <div class="food-fact__data">
+            <h2 class="section-title-center">
+              Eat What Makes You Healthy & Happy!
+            </h2>
+            <p class="food-fact__description">
+              Have you ever wondered why comfort food has such a powerful impact
+              on our emotions? Science tells us that certain foods can trigger
+              the release of serotonin and dopamine, which are associated with
+              feelings of happiness & relaxation. This biological response is
+              believed to be one reason why we often turn to comfort food during
+              times of stress or sadness.
+            </p>
+          </div>
+
+          <div class="landing-s2-main__img">
+            <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" />
         <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
       </a>
   
@@ -42,56 +113,112 @@
                 <a href="#sign-in" class="nav__link sign-in-btn-nav">Sign In</a>
               </li>
             </ul>
+
           </div>
-  
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="bx bx-grid-alt"></i>
+        </div>
+      </section>
+
+      <!-- Order Now Section By Sam -->
+      <section id="sam" class="container-sam">
+        <div class="main-head-sam">
+          <div class="head-content-sam">
+            <i class="bx bx-search-alt-2"></i>
+            <input
+              type="text"
+              id="search-box-sam"
+              placeholder="Search menu"
+              onkeyup="searchSAM()"
+            />
+            <button id="reset-sam">X</button>
           </div>
-        </nav>
-      </header>
-  
-      <main class="l-main">
-        <!--First Section of Landing Page By Navuuu-->
-        <section class="home" id="home">
-          <div class="home__container bd-container bd-grid">
-            <div class="home__img">
-              <img src="./assets/salmon-salad.png" alt="" />
+
+          <div class="food-items-sam" id="food-items-sam">
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (2).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Noodle organica</h3>
+                  <p>Rs. 100</p>
+                </div>
+
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
             </div>
-  
-            <div class="home__data">
-              <h1 class="home__title">Plant Based Meat Salad</h1>
-              <p class="home__description">
-                Food Fusion Fun<br />
-                Where Tradition Meets Innovation and Healthy Meets Tasty!
-              </p>
-              <a href="#" class="landing-button">Order Now</a>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (3).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Egg-salad Organica</h3>
+                  <p>Rs. 100</p>
+                </div>
+
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
-  
-        <!--Second Section of Landing Page by Navuuu-->
-        <section class="food-fact section bd-container" id="#">
-          <div class="food-fact__container bd-grid">
-            <div class="food-fact__data">
-              <h2 class="section-title-center">
-                Eat What Makes You Healthy & Happy!
-              </h2>
-              <p class="food-fact__description">
-                Have you ever wondered why comfort food has such a powerful impact
-                on our emotions? Science tells us that certain foods can trigger
-                the release of serotonin and dopamine, which are associated with
-                feelings of happiness & relaxation. This biological response is
-                believed to be one reason why we often turn to comfort food during
-                times of stress or sadness.
-              </p>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (4).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Fruits de fresh</h3>
+                  <p>Rs. 130</p>
+                </div>
+
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
             </div>
-  
-            <div class="landing-s2-main__img">
-              <img
-                src="./assets/healthyhappyfood.jpg"
-                alt="healthy-happy-food"
-              />
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (5).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Vegetable Mashup</h3>
+                  <p>Rs. 120</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
             </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (6).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Organica de salad</h3>
+                  <p>Rs. 160</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (7).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Nature en salad</h3>
+                  <p>Rs. 170</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
           </div>
         </section>
   
@@ -110,31 +237,89 @@
                 >Order History</a
               >
             </div>
-  
-            <div class="order-landing__data">
-              <img
-                src="./assets/new-order-landing.png"
-                alt=""
-                class="order-landing__img"
-              />
-              <h3 class="order-landing__title">Order From Us!</h3>
-              <a href="#" class="landing-button landing-button-link">Order Now</a>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (8).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Mix-fresh salad</h3>
+                  <p>Rs. 110</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
             </div>
-  
-            <div class="order-landing__data">
-              <img
-                src="./assets/track-order-landing.png"
-                alt=""
-                class="order-landing__img"
-              />
-              <h3 class="order-landing__title">Already Ordered?</h3>
-              <a href="#" class="landing-button landing-button-link"
-                >Track Order</a
-              >
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (9).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Fruit-e-convoy</h3>
+                  <p>Rs. 210</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
-      </main>  
+        </div>
+        <div class="checkout-sam">
+          <div class="text-content-sam">
+            <h1>Total:</h1>
+            <h2 id="totalPrice">$0</h2>
+          </div>
+          <button class="checkout-btn-sam" id="checkout-sam">Checkout</button>
+          <button class="checkout-btn-sam" id="reset-cart-sam">
+            Reset cart
+          </button>
+        </div>
+      </section>
+      <!--Third Section of Landing Page by Navuuu-->\
+      <section class="order-landing section bd-container" id="#">
+        <h2 class="section-title">Orders</h2>
+        <div class="order-landing__container bd-grid">
+          <div class="order-landing__data">
+            <img
+              src="./assets/order-history-image-landing.jpg"
+              alt="history"
+              class="order-landing__img"
+            />
+            <h3 class="order-landing__title">See What You've Ordered!</h3>
+            <a href="#" class="landing-button landing-button-link"
+              >Order History</a
+            >
+          </div>
+
+          <div class="order-landing__data">
+            <img
+              src="./assets/new-order-landing.png"
+              alt=""
+              class="order-landing__img"
+            />
+            <h3 class="order-landing__title">Order From Us!</h3>
+            <a class="landing-button landing-button-link" id="order-sam"
+              >Order Now</a
+            >
+          </div>
+
+          <div class="order-landing__data">
+            <img
+              src="./assets/track-order-landing.png"
+              alt=""
+              class="order-landing__img"
+            />
+            <h3 class="order-landing__title">Already Ordered?</h3>
+            <a href="#" class="landing-button landing-button-link"
+              >Track Order</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!--Menu  by Naima-->
 
@@ -145,50 +330,51 @@
     <!--Tracking Food by Sam-->
 
     <!--Order History By Anay-->
- <!--========== Footer By Navuuu ==========-->
- <footer class="footer section">
-    <div class="footer__container bd-container bd-grid">
-      <div class="footer__content">
-        <h3 class="footer__title">
-          <a href="#" class="footer__logo">FlavorsFusion</a>
-        </h3>
-        <p class="footer__description">Providing Quality!</p>
+    <!--========== Footer By Navuuu ==========-->
+    <footer class="footer section">
+      <div class="footer__container bd-container bd-grid">
+        <div class="footer__content">
+          <h3 class="footer__title">
+            <a href="#" class="footer__logo">FlavorsFusion</a>
+          </h3>
+          <p class="footer__description">Providing Quality!</p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Explore</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Sign In</a></li>
+            <li><a href="#" class="footer__link">Menu</a></li>
+            <li><a href="#" class="footer__link">Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Company</h3>
+          <ul>
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Recipes</a></li>
+            <li><a href="#" class="footer__link">Home</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Social</h3>
+          <a href="#" class="footer__social"
+            ><i class="bx bxl-facebook-circle"></i
+          ></a>
+          <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="footer__social"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
       </div>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Explore</h3>
-        <ul>
-          <li><a href="#" class="footer__link">Sign In</a></li>
-          <li><a href="#" class="footer__link">Menu</a></li>
-          <li><a href="#" class="footer__link">Orders</a></li>
-        </ul>
-      </div>
+      <p class="footer__copy">&#169; 2023 FlavorsFusion. All right reserved</p>
+    </footer>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Our Company</h3>
-        <ul>
-          <li><a href="#" class="footer__link">About Us</a></li>
-          <li><a href="#" class="footer__link">Recipes</a></li>
-          <li><a href="#" class="footer__link">Home</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__content">
-        <h3 class="footer__title">Social</h3>
-        <a href="#" class="footer__social"
-          ><i class="bx bxl-facebook-circle"></i
-        ></a>
-        <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="footer__social"
-          ><i class="bx bxl-instagram-alt"></i
-        ></a>
-      </div>
-    </div>
-
-    <p class="footer__copy">&#169; 2023 FlavorsFusion. All right reserved</p>
-  </footer>
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="./javascript/landing.js"></script>
-</body>
+    <script src="./javascript/order.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./javascript/landing.js"></script>
+  </body>
 </html>
