@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Web</title>
+    <!-- CDN link for Swiper - CSS (by Naima) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link
     href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="./order.css">
     <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./menu.css">
 </head>
 <body>
 
@@ -25,10 +28,10 @@
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="#home" class="nav__link active-link">Home</a>
+                <a href="#home" class="nav__link active-link" id="home-btn">Home</a>
               </li>
               <li class="nav__item">
-                <a href="#menu" class="nav__link">Menu</a>
+                <a href="#menu" class="nav__link" id="menu-btn">Menu</a>
               </li>
               <li class="nav__item">
                 <a href="#about" class="nav__link">About</a>
@@ -40,7 +43,7 @@
                 <a href="#order-landing" class="nav__link">Orders</a>
               </li>
               <li class="nav__item">
-                <a href="#sign-in" class="nav__link sign-in-btn-nav">Sign In</a>
+                <a href="#sign-in" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign In</a>
               </li>
             </ul>
           </div>
@@ -280,8 +283,133 @@
         </section>
       </main>  
 
+    <!-------------- MenuPage By Naima ----------->
+    <div class="menu-naima">
+      <!-- Summer Sale -->
+      <div class="menu-ss-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ss-container">
+                <div class="ss-text">
+                  <h1>Summer Sale</h1>
+                  <p>Up to 70% off</p>
+                  <button class="ss-btn">BUY NOW!</button>
+                </div>
+                <div class="ss-img-container">
+                  <img class="ss-img" src="./assets/ss-1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ss-container">
+                <div class="ss-text">
+                  <h1>Summer Sale</h1>
+                  <p>Up to 70% off</p>
+                  <button class="ss-btn">BUY NOW!</button>
+                </div>
+                <div class="ss-img-container">
+                  <img class="ss-img" src="./assets/ss-2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ss-container">
+                <div class="ss-text">
+                  <h1>Summer Sale</h1>
+                  <p>Up to 70% off</p>
+                  <button class="ss-btn">BUY NOW!</button>
+                </div>
+                <div class="ss-img-container">
+                  <img class="ss-img" src="./assets/ss-3.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
 
-    <!--Menu  by Naima-->
+      <!-- Menu Heading -->
+      <div class="menu-heading">
+        <h2 class="menu-title">MENU</h2>
+        <div class="menu-line"></div>
+      </div>
+     <!-- Menu Buttons -->
+      <div class="menu-btn-container">
+        <button class="menu-btn starter menu-clicked-btn">STARTER</button>
+        <button class="menu-btn salad">SALAD</button>
+        <button class="menu-btn dessert">DESSERT</button>
+        <button class="menu-btn soup">SOUP</button>
+        <button class="menu-btn spaghetti">SPAGHETTI</button>
+        <button class="menu-btn dinner">DINNER</button>
+      </div>
+      <!-- Menu Items -->
+      <div class="m-items-slide m-items-slide1">
+        <div class="m-items-container">
+          <div class="dish">
+           <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/starter/starter1.png" alt="">
+           </div>
+           <div class="dish-text-container">
+            <p class="dish-name">Caprese Starter</p>
+            <p class="dish-price">10.30 $</p>
+           </div>
+          </div>
+          <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-new" src="./assets/new.png" alt="">
+             <img class="dish-img" src="./assets/starter/starter2.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Israeli Starter</p>
+             <p class="dish-price">12.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/starter/starter3.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Roll Ball Starter</p>
+             <p class="dish-price">19.39 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/starter/starter4.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Organic Mix Starter</p>
+             <p class="dish-price">60.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/starter/starter5.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Quinoa Starter</p>
+             <p class="dish-price">21.10 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/starter/starter6.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Asparagus Starter</p>
+             <p class="dish-price">41.10 $</p>
+            </div>
+           </div>
+        </div>
+      </div>
+
+
+    </div>  
 
     <!--About Us by Allerie-->
 
@@ -333,8 +461,11 @@
     <p class="footer__copy">&#169; 2023 FlavorsFusion. All right reserved</p>
   </footer>
 
+  <!-- CDN link for Swiper - JS (by Naima) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./javascript/landing.js"></script>
-  <script src="./order.js"></script>
+  <script src="./menu.js"></script>
 </body>
 </html>
