@@ -62,15 +62,6 @@ html{
 
 
 /*========== Theme ==========*/
-.change-theme{
-  position: absolute;
-  right: 1.5rem;
-  top: 2.2rem;
-  display: flex;
-  color: var(--title-color);
-  font-size: 2rem;
-  cursor: pointer;
-}
 
 body{
   margin: var(--header-height) 0 0 0;
@@ -81,6 +72,9 @@ body{
   line-height: 1.6;
 }
 
+#order-now-sam{
+  cursor: pointer;
+}
 h1,h2,h3,ul,p{
   margin: 0;
 }
@@ -209,21 +203,6 @@ img{
   top: calc(var(--header-height) + 1rem);
 }
 
-/* Active menu link */
-.active-link{
-  position: relative;
-}
-
-.active-link::before{
-  content: '';
-  position: absolute;
-  bottom: -.75rem;
-  left: 45%;
-  width: 5px;
-  height: 5px;
-  background-color: var(--title-color);
-  border-radius: 50%;
-}
 
 /* Change background header */
 .scroll-header{
@@ -241,7 +220,7 @@ img{
   padding: .3rem;
   background: rgba(0, 255, 0, 0.575);
   border-radius: .4rem;
-  z-index: var(--z-tooltip);
+  z-index: 6969;
   transition: .4s;
   visibility: hidden;
 }

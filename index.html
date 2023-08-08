@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food-Web</title>
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/landing.css">
-  <link rel="stylesheet" href="./css/signInUp.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!-- font-awesome icon cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CDN link for Swiper - CSS (by Naima) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/signInUp.css">
+  <link rel="stylesheet" href="./order.css">
+  <link rel="stylesheet" href="./css/landing.css">
+  <link rel="stylesheet" href="./menu.css">
 </head>
 
 <body>
@@ -50,6 +54,377 @@
       </div>
     </nav>
   </header>
+  <!--========== Scroll To Top By Navuuu ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+  </a>
+
+  <!--Navbar By Navuuu-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">FlavoursFusion</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link" id="home-btn">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#menu" class="nav__link" id="menu-btn">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#recipes" class="nav__link">Recipes</a>
+          </li>
+          <li class="nav__item">
+            <a href="#order-landing" class="nav__link">Orders</a>
+          </li>
+          <li class="nav__item">
+            <a href="#sign-in" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign In</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!--First Section of Landing Page By Navuuu-->
+  <main class="l-main">
+    <section class="home" id="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__img">
+          <img src="./assets/salmon-salad.png" alt="" />
+        </div>
+
+        <div class="home__data">
+          <h1 class="home__title">Plant Based Meat Salad</h1>
+          <p class="home__description">
+            Food Fusion Fun<br />
+            Where Tradition Meets Innovation and Healthy Meets Tasty!
+          </p>
+          <a href="#" class="landing-button">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Second Section of Landing Page by Navuuu-->
+    <section class="food-fact section bd-container" id="#">
+      <div class="food-fact__container bd-grid">
+        <div class="food-fact__data">
+          <h2 class="section-title-center">
+            Eat What Makes You Healthy & Happy!
+          </h2>
+          <p class="food-fact__description">
+            Have you ever wondered why comfort food has such a powerful impact
+            on our emotions? Science tells us that certain foods can trigger
+            the release of serotonin and dopamine, which are associated with
+            feelings of happiness & relaxation. This biological response is
+            believed to be one reason why we often turn to comfort food during
+            times of stress or sadness.
+          </p>
+        </div>
+
+        <div class="landing-s2-main__img">
+          <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" />
+        </div>
+      </div>
+    </section>
+
+
+    <section id="sam" class="container-sam">
+      <button id="close-sam-section">X</button>
+      <div class="main-head-sam">
+        <div class="head-content-sam">
+          <i class="bx bx-search-alt-2"></i>
+          <input type="text" id="search-box-sam" placeholder="Search menu" onkeyup="searchSAM()" />
+
+        </div>
+
+        <div class="food-items-sam" id="food-items-sam">
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (2).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Noodle organica</h3>
+                <p>Rs. 100</p>
+              </div>
+
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (3).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Egg-salad Organica</h3>
+                <p>Rs. 100</p>
+              </div>
+
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (4).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Fruits de fresh</h3>
+                <p>Rs. 130</p>
+              </div>
+
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (5).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Vegetable Mashup</h3>
+                <p>Rs. 120</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (6).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Organica de salad</h3>
+                <p>Rs. 160</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (7).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Nature en salad</h3>
+                <p>Rs. 170</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (8).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Mix-fresh salad</h3>
+                <p>Rs. 110</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (9).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Fruit-e-convoy</h3>
+                <p>Rs. 210</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkout-sam">
+        <div class="text-content-sam">
+          <h1>Total:</h1>
+          <h2 id="totalPrice">Rs.0</h2>
+        </div>
+        <button class="checkout-btn-sam" id="reset-sam">Checkout</button>
+        <button class="checkout-btn-sam" id="reset-cart-sam">Reset cart</button>
+      </div>
+    </section>
+
+    <!--Third Section of Landing Page by Navuuu-->\
+    <section class="order-landing section bd-container" id="order-landing">
+      <h2 class="section-title">Orders</h2>
+      <div class="order-landing__container bd-grid">
+        <div class="order-landing__data">
+          <img src="./assets/order-history-image-landing.jpg" alt="history" class="order-landing__img" />
+          <h3 class="order-landing__title">See What You've Ordered!</h3>
+          <a href="#" class="landing-button landing-button-link">Order History</a>
+        </div>
+
+        <div class="order-landing__data">
+          <img src="./assets/new-order-landing.png" alt="" class="order-landing__img" />
+          <h3 class="order-landing__title">Order From Us!</h3>
+          <a id="order-now-sam" class="landing-button landing-button-link">Order Now</a>
+        </div>
+
+        <div class="order-landing__data">
+          <img src="./assets/track-order-landing.png" alt="" class="order-landing__img" />
+          <h3 class="order-landing__title">Already Ordered?</h3>
+          <a href="#" class="landing-button landing-button-link">Track Order</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-------------- MenuPage By Naima ----------->
+  <div class="menu-naima">
+    <!-- Summer Sale -->
+    <div class="menu-ss-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="ss-container">
+              <div class="ss-text">
+                <h1>Summer Sale</h1>
+                <p>Up to 70% off</p>
+                <button class="ss-btn">BUY NOW!</button>
+              </div>
+              <div class="ss-img-container">
+                <img class="ss-img" src="./assets/ss-1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ss-container">
+              <div class="ss-text">
+                <h1>Summer Sale</h1>
+                <p>Up to 70% off</p>
+                <button class="ss-btn">BUY NOW!</button>
+              </div>
+              <div class="ss-img-container">
+                <img class="ss-img" src="./assets/ss-2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ss-container">
+              <div class="ss-text">
+                <h1>Summer Sale</h1>
+                <p>Up to 70% off</p>
+                <button class="ss-btn">BUY NOW!</button>
+              </div>
+              <div class="ss-img-container">
+                <img class="ss-img" src="./assets/ss-3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!-- Menu Heading -->
+    <div class="menu-heading">
+      <h2 class="menu-title">MENU</h2>
+      <div class="menu-line"></div>
+    </div>
+    <!-- Menu Buttons -->
+    <div class="menu-btn-container">
+      <button class="menu-btn starter menu-clicked-btn">STARTER</button>
+      <button class="menu-btn salad">SALAD</button>
+      <button class="menu-btn dessert">DESSERT</button>
+      <button class="menu-btn soup">SOUP</button>
+      <button class="menu-btn spaghetti">SPAGHETTI</button>
+      <button class="menu-btn dinner">DINNER</button>
+    </div>
+    <!-- Menu Items -->
+    <div class="m-items-slide m-items-slide1">
+      <div class="m-items-container">
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/starter/starter1.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Caprese Starter</p>
+            <p class="dish-price">10.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/starter/starter2.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Israeli Starter</p>
+            <p class="dish-price">12.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/starter/starter3.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Roll Ball Starter</p>
+            <p class="dish-price">19.39 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/starter/starter4.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Organic Mix Starter</p>
+            <p class="dish-price">60.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/starter/starter5.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Quinoa Starter</p>
+            <p class="dish-price">21.10 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/starter/starter6.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Asparagus Starter</p>
+            <p class="dish-price">41.10 $</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--About Us by Allerie-->
+  <!--                   -->
 
   <main class="l-main">
     <!--First Section of Landing Page By Navuuu-->
@@ -132,7 +507,8 @@
     <div id="sign-in-content">
       <div id="hd1" class="d-none sign-in-element">
         <h1>Sign In</h1>
-        <h6>Don't have an account yet?<a onclick="toggleSignIn()" style="color: wheat; text-decoration: underline;"> Sign In</a></h6>
+        <h6>Don't have an account yet?<a onclick="toggleSignIn()" style="color: wheat; text-decoration: underline;">
+            Sign In</a></h6>
         <button class="btn btn-google"><i class="fa fa-google"></i> | Sign In with Google</button>
         <form action="#">
           <input type="text" id="email-sign-in" name="sign-in">
@@ -141,25 +517,22 @@
         </form>
       </div>
       <div class="sign-in-loco" id="hd2">
-        <img
-          src="./Resources/logo (1).png"
-          alt="FlavorFusion-Logo" width="100%" height="auto">
+        <img src="./Resources/logo (1).png" alt="FlavorFusion-Logo" width="100%" height="auto">
       </div>
       <div id="sign-in-line"></div>
       <div class="sign-in-element" id="hd3">
-          <h1>Sign In</h1>
-          <h6>Don't have an account yet?<a onclick="toggleSignUp()" style="color: wheat; text-decoration: underline;"> Sign Up</a></h6>
-          <button class="btn btn-google"><i class="fa fa-google"></i> | Sign In with Google</button>
-            <form action="#"></form>
-            <input type="text" id="email-sign-in" name="sign-in">
-            <input type="text" id="password-sign-in" name="password-sign-in">
-            <input type="submit" value="Submit">
-            </form>
+        <h1>Sign In</h1>
+        <h6>Don't have an account yet?<a onclick="toggleSignUp()" style="color: wheat; text-decoration: underline;">
+            Sign Up</a></h6>
+        <button class="btn btn-google"><i class="fa fa-google"></i> | Sign In with Google</button>
+        <form action="#"></form>
+        <input type="text" id="email-sign-in" name="sign-in">
+        <input type="text" id="password-sign-in" name="password-sign-in">
+        <input type="submit" value="Submit">
+        </form>
       </div>
       <div class="d-none sign-in-loco" id="hd4">
-        <img
-          src="./Resources/logo (1).png"
-          alt="FlavorFusion-Logo" width="100%" height="auto">
+        <img src="./Resources/logo (1).png" alt="FlavorFusion-Logo" width="100%" height="auto">
       </div>
     </div>
   </div>
@@ -204,9 +577,14 @@
     <p class="footer__copy">&#169; 2023 FlavorsFusion. All right reserved</p>
   </footer>
 
+  <!-- CDN link for Swiper - JS (by Naima) -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./javascript/landing.js"></script>
   <script src="./javascript/signInOut.js"></script>
+  <script src="./menu.js"></script>
+  <script src="./order.js"></script>
 </body>
 
 </html>
