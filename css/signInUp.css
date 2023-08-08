@@ -11,37 +11,57 @@
 
 
 #sign-in-content{
-    width: 50%;
+    width: 40%;
     background-color:rgb(75, 91, 62);
     margin-top: 10%;
     margin-bottom: 10%;
     display: flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items: center;
 }
 
-#sign-in-loco{
-    width: 40%;
-    height: 50%;
+.sign-in-loco{
+    width: 25%;
     margin-top: 10%;
     margin-bottom: 10%;
     display: flex;
-    justify-content:center;
-    align-items: center;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+
 }
 
 #sign-in-line{
     border-left: 6px solid rgb(200, 223, 191);
-    height: 500px;
-    margin-left: 2%;
-    margin-right: 4%;
+    height: 350px;
+    margin-left: 1%;
+    margin-right:2%;
   }
 
-#sign-in-element{
-    width: 40%;
-    height: 50%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    
-   
+.sign-in-element{
+    width: 25%;
+    height: 500px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.fIn {
+  animation: fadeIn 3s;
+}
+
+.fOut {
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
