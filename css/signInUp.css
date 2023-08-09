@@ -48,6 +48,10 @@
 
 }
 
+.signIn-Up-desc{
+  color:rgb(200, 223, 191);
+}
+
 .fIn {
   animation: fadeIn 3s;
 }

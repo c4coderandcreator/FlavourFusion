@@ -1,8 +1,8 @@
 function toggleSignUp() {
-    const h1 = document.getElementById("hd1")
-    const h2 = document.getElementById("hd2")
-    const h3 = document.getElementById("hd3")
-    const h4 = document.getElementById("hd4")
+    const h1 = document.getElementById("signIn-Up-hd1")
+    const h2 = document.getElementById("signIn-Up-hd2")
+    const h3 = document.getElementById("signIn-Up-hd3")
+    const h4 = document.getElementById("signIn-Up-hd4")
     h1.classList.toggle('d-none')
     h1.classList.toggle('fIn')
     h2.classList.toggle('d-none')
@@ -14,10 +14,10 @@ function toggleSignUp() {
   }
   
   function toggleSignIn() {
-    const h1 = document.getElementById("hd1")
-    const h2 = document.getElementById("hd2")
-    const h3 = document.getElementById("hd3")
-    const h4 = document.getElementById("hd4")
+    const h1 = document.getElementById("signIn-Up-hd1")
+    const h2 = document.getElementById("signIn-Up-hd2")
+    const h3 = document.getElementById("signIn-Up-hd3")
+    const h4 = document.getElementById("signIn-Up-hd4")
     h1.classList.toggle('d-none')
     h1.classList.toggle('fOut')
     h2.classList.toggle('d-none')
