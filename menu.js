@@ -1,21 +1,21 @@
 /* ------------ MenuPage By Naima -------------*/
 // Page hide and show
-var home_btn = document.querySelector("#home-btn"),
-menu_btn = document.querySelector("#menu-btn"),
-main = document.querySelector(".l-main"),
-menu_naima = document.querySelector(".menu-naima");
+const homeBtn = document.querySelector("#home-btn"),
+      menuBtn = document.querySelector("#menu-btn"),
+      main = document.querySelector(".l-main"),
+      menuNaima = document.querySelector(".menu-naima");
 
-menu_btn.addEventListener("click", function(){
+menuBtn.addEventListener("click", function(){
     main.style.display="none";
-    menu_naima.style.display="block";
-    home_btn.classList.remove("active-link");
-    menu_btn.classList.add("active-link");
+    menuNaima.style.display="block";
+    homeBtn.classList.remove("active-link");
+    menuBtn.classList.add("active-link");
 })
-home_btn.addEventListener("click", function(){
-    menu_naima.style.display="none";
+homeBtn.addEventListener("click", function(){
+    menuNaima.style.display="none";
     main.style.display="block";
-    menu_btn.classList.remove("active-link");
-    home_btn.classList.add("active-link");
+    menuBtn.classList.remove("active-link");
+    homeBtn.classList.add("active-link");
 })
 
 // Summer Sale
@@ -37,6 +37,58 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 // Menu Buttons
+const menuButtons = document.querySelectorAll(".menu-btn");
+const menuSlides = document.querySelectorAll(".m-items-slide");
 
+menuButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        menuButtons.forEach(btn => btn.classList.remove('menu-clicked-btn'));
+        button.classList.add('menu-clicked-btn');
 
-// Menu Items
+        const targetSlideId = button.getAttribute("data-target");
+        menuSlides.forEach(slide => slide.style.display = "none");
+        
+        const targetSlide = document.querySelector(`.${targetSlideId}`);
+        if (targetSlide) {
+            targetSlide.style.display = "block";
+        }
+    });
+});
+
+// Dropdown Menu
+const dropdown = document.querySelector('.dropdown'),
+      select = dropdown.querySelector('.select'),
+      caret = dropdown.querySelector('.caret'),
+      menu_dd = dropdown.querySelector('.menu-dd'),
+      options = dropdown.querySelectorAll('.menu-dd li'),
+      selected = dropdown.querySelector('.selected');
+
+select.addEventListener('click', () => {
+    select.classList.toggle('select-clicked');
+    caret.classList.toggle('caret-rotate');
+    menu_dd.classList.toggle('menu-open');
+});
+
+options.forEach(option => {
+    option.addEventListener('click', () => {
+        selected.innerText = option.innerText;
+        select.classList.remove('select-clicked');
+        caret.classList.remove('caret-rotate');
+        menu_dd.classList.remove('menu-open');
+        options.forEach(option => {
+            option.classList.remove('active');
+        });
+        option.classList.add('active');
+
+        const slideId = option.getAttribute('data-target');
+        const slides = document.querySelectorAll('.m-items-slide');
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+        
+        const selectedSlide = document.querySelector(`.${slideId}`);
+        if (selectedSlide) {
+            selectedSlide.style.display = 'block';
+        }
+    });
+});

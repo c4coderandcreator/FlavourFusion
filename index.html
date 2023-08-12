@@ -306,132 +306,452 @@
     </section>
   </main>
 
-  <!-------------- MenuPage By Naima ----------->
-  <div class="menu-naima">
-    <!-- Summer Sale -->
-    <div class="menu-ss-container">
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="ss-container">
-              <div class="ss-text">
-                <h1>Summer Sale</h1>
-                <p>Up to 70% off</p>
-                <button class="ss-btn">BUY NOW!</button>
+    <!-------------- MenuPage By Naima ----------->
+    <div class="menu-naima" id="menu">
+      <!-- Summer Sale -->
+      <div class="menu-ss-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ss-container">
+                <div class="ss-text">
+                  <h1>Summer Sale</h1>
+                  <p>Up to 70% off</p>
+                  <button class="ss-btn">BUY NOW!</button>
+                </div>
+                <div class="ss-img-container">
+                  <img class="ss-img" src="./assets/ss-1.png" alt="">
+                </div>
               </div>
-              <div class="ss-img-container">
-                <img class="ss-img" src="./assets/ss-1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <div class="ss-container">
+                <div class="ss-text">
+                  <h1>Summer Sale</h1>
+                  <p>Up to 70% off</p>
+                  <button class="ss-btn">BUY NOW!</button>
+                </div>
+                <div class="ss-img-container">
+                  <img class="ss-img" src="./assets/ss-2.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ss-container">
+                <div class="ss-text">
+                  <h1>Summer Sale</h1>
+                  <p>Up to 70% off</p>
+                  <button class="ss-btn">BUY NOW!</button>
+                </div>
+                <div class="ss-img-container">
+                  <img class="ss-img" src="./assets/ss-3.png" alt="">
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="ss-container">
-              <div class="ss-text">
-                <h1>Summer Sale</h1>
-                <p>Up to 70% off</p>
-                <button class="ss-btn">BUY NOW!</button>
-              </div>
-              <div class="ss-img-container">
-                <img class="ss-img" src="./assets/ss-2.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="ss-container">
-              <div class="ss-text">
-                <h1>Summer Sale</h1>
-                <p>Up to 70% off</p>
-                <button class="ss-btn">BUY NOW!</button>
-              </div>
-              <div class="ss-img-container">
-                <img class="ss-img" src="./assets/ss-3.png" alt="" />
-              </div>
-            </div>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
 
-    <!-- Menu Heading -->
-    <div class="menu-heading">
-      <h2 class="menu-title">MENU</h2>
-      <div class="menu-line"></div>
-    </div>
-    <!-- Menu Buttons -->
-    <div class="menu-btn-container">
-      <button class="menu-btn starter menu-clicked-btn">STARTER</button>
-      <button class="menu-btn salad">SALAD</button>
-      <button class="menu-btn dessert">DESSERT</button>
-      <button class="menu-btn soup">SOUP</button>
-      <button class="menu-btn spaghetti">SPAGHETTI</button>
-      <button class="menu-btn dinner">DINNER</button>
-    </div>
-    <!-- Menu Items -->
-    <div class="m-items-slide m-items-slide1">
-      <div class="m-items-container">
-        <div class="dish">
-          <div class="dish-img-container">
-            <img class="dish-new" src="./assets/new.png" alt="" />
-            <img class="dish-img" src="./assets/starter/starter1.png" alt="" />
-          </div>
-          <div class="dish-text-container">
+      <!-- Menu Heading -->
+      <div class="menu-heading">
+        <h2 class="menu-title">MENU</h2>
+        <div class="menu-line"></div>
+      </div>
+     <!-- Menu Buttons -->
+      <div class="menu-btn-container">
+        <button class="menu-btn menu-clicked-btn" data-target="m-items-slide1">STARTER</button>
+        <button class="menu-btn" data-target="m-items-slide2">SALAD</button>
+        <button class="menu-btn" data-target="m-items-slide3">DESSERT</button>
+        <button class="menu-btn" data-target="m-items-slide4">SOUP</button>
+        <button class="menu-btn" data-target="m-items-slide5">SPAGHETTI</button>
+        <button class="menu-btn" data-target="m-items-slide6">DRINKS</button>
+      </div>
+      <!-- Dropdown Menu -->
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">Starter</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu-dd">
+          <li data-target="m-items-slide1" class="active">Starter</li>
+          <li data-target="m-items-slide2">Salad</li>
+          <li data-target="m-items-slide3">Dessert</li>
+          <li data-target="m-items-slide4">Soup</li>
+          <li data-target="m-items-slide5">Spaghetti</li>
+          <li data-target="m-items-slide6">Drinks</li>
+        </ul>
+      </div>
+
+      <!-- Starter -->
+      <div class="m-items-slide m-items-slide1">
+        <div class="m-items-container">
+          <div class="dish">
+           <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/starter/starter1.png" alt="">
+           </div>
+           <div class="dish-text-container">
             <p class="dish-name">Caprese Starter</p>
             <p class="dish-price">10.30 $</p>
+           </div>
           </div>
-        </div>
-        <div class="dish">
-          <div class="dish-img-container">
-            <img class="dish-new" src="./assets/new.png" alt="" />
-            <img class="dish-img" src="./assets/starter/starter2.png" alt="" />
-          </div>
-          <div class="dish-text-container">
-            <p class="dish-name">Israeli Starter</p>
-            <p class="dish-price">12.30 $</p>
-          </div>
-        </div>
-        <div class="dish">
-          <div class="dish-img-container">
-            <img class="dish-img" src="./assets/starter/starter3.png" alt="" />
-          </div>
-          <div class="dish-text-container">
-            <p class="dish-name">Roll Ball Starter</p>
-            <p class="dish-price">19.39 $</p>
-          </div>
-        </div>
-        <div class="dish">
-          <div class="dish-img-container">
-            <img class="dish-img" src="./assets/starter/starter4.png" alt="" />
-          </div>
-          <div class="dish-text-container">
-            <p class="dish-name">Organic Mix Starter</p>
-            <p class="dish-price">60.30 $</p>
-          </div>
-        </div>
-        <div class="dish">
-          <div class="dish-img-container">
-            <img class="dish-img" src="./assets/starter/starter5.png" alt="" />
-          </div>
-          <div class="dish-text-container">
-            <p class="dish-name">Quinoa Starter</p>
-            <p class="dish-price">21.10 $</p>
-          </div>
-        </div>
-        <div class="dish">
-          <div class="dish-img-container">
-            <img class="dish-img" src="./assets/starter/starter6.png" alt="" />
-          </div>
-          <div class="dish-text-container">
-            <p class="dish-name">Asparagus Starter</p>
-            <p class="dish-price">41.10 $</p>
-          </div>
+          <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-new" src="./assets/new.png" alt="">
+             <img class="dish-img" src="./assets/starter/starter2.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Israeli Starter</p>
+             <p class="dish-price">12.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/starter/starter3.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Roll Ball Starter</p>
+             <p class="dish-price">19.39 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/starter/starter4.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Organic Mix Starter</p>
+             <p class="dish-price">60.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/starter/starter5.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Quinoa Starter</p>
+             <p class="dish-price">21.10 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/starter/starter6.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Asparagus Starter</p>
+             <p class="dish-price">41.10 $</p>
+            </div>
+           </div>
         </div>
       </div>
-    </div>
-  </div>
-  </div>
+      <!-- Salad -->
+      <div class="m-items-slide m-items-slide2">
+        <div class="m-items-container">
+          <div class="dish">
+           <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/salad/salad1.png" alt="">
+           </div>
+           <div class="dish-text-container">
+            <p class="dish-name">Asian Salad</p>
+            <p class="dish-price">20.40 $</p>
+           </div>
+          </div>
+          <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-new" src="./assets/new.png" alt="">
+             <img class="dish-img" src="./assets/salad/salad2.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Spinach Salad</p>
+             <p class="dish-price">17.10 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/salad/salad3.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Mexican Salad</p>
+             <p class="dish-price">11.47 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/salad/salad4.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Quinoa Salad</p>
+             <p class="dish-price">91.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/salad/salad5.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Tabbouleh Salad</p>
+             <p class="dish-price">56.25 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/salad/salad6.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">LentilSalad</p>
+             <p class="dish-price">31.91 $</p>
+            </div>
+           </div>
+        </div>
+      </div>
+      <!-- Dessert -->
+      <div class="m-items-slide m-items-slide3">
+        <div class="m-items-container">
+          <div class="dish">
+           <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/dessert/dessert1.png" alt="">
+           </div>
+           <div class="dish-text-container">
+            <p class="dish-name">Pantua Dessert</p>
+            <p class="dish-price">60.50 $</p>
+           </div>
+          </div>
+          <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-new" src="./assets/new.png" alt="">
+             <img class="dish-img" src="./assets/dessert/dessert2.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Panna Dessert</p>
+             <p class="dish-price">32.20 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/dessert/dessert3.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Pecan Pie</p>
+             <p class="dish-price">41.97 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/dessert/dessert4.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Fruit Dessert</p>
+             <p class="dish-price">19.20 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/dessert/dessert5.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Pineapple Dessert</p>
+             <p class="dish-price">21.10 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/dessert/dessert6.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Chocolate Dessert</p>
+             <p class="dish-price">41.10 $</p>
+            </div>
+           </div>
+        </div>
+      </div>
+      <!-- Soup -->
+      <div class="m-items-slide m-items-slide4">
+        <div class="m-items-container">
+          <div class="dish">
+           <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/soup/soup1.png" alt="">
+           </div>
+           <div class="dish-text-container">
+            <p class="dish-name">Butternut Soup</p>
+            <p class="dish-price">10.30 $</p>
+           </div>
+          </div>
+          <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-new" src="./assets/new.png" alt="">
+             <img class="dish-img" src="./assets/soup/soup2.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Italian Mix Soup</p>
+             <p class="dish-price">12.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/soup/soup3.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Hot Pasta Soup</p>
+             <p class="dish-price">19.39 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/soup/soup4.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Miso Soup</p>
+             <p class="dish-price">60.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/soup/soup5.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Thai Soup</p>
+             <p class="dish-price">69.55 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/soup/soup6.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Tomato Soup</p>
+             <p class="dish-price">21.31 $</p>
+            </div>
+           </div>
+        </div>
+      </div>
+      <!-- Spaghetti -->
+      <div class="m-items-slide m-items-slide5">
+        <div class="m-items-container">
+          <div class="dish">
+           <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/spaghetti/spaghetti1.png" alt="">
+           </div>
+           <div class="dish-text-container">
+            <p class="dish-name">Mixed Spaghetti</p>
+            <p class="dish-price">10.30 $</p>
+           </div>
+          </div>
+          <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-new" src="./assets/new.png" alt="">
+             <img class="dish-img" src="./assets/spaghetti/spaghetti2.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Spicy Spaghetti</p>
+             <p class="dish-price">12.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/spaghetti/spaghetti3.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Creamy Spaghetti</p>
+             <p class="dish-price">19.39 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/spaghetti/spaghetti4.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Simple Spaghetti</p>
+             <p class="dish-price">60.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/spaghetti/spaghetti5.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Cheesy Spaghetti</p>
+             <p class="dish-price">21.10 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/spaghetti/spaghetti6.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Roasted Spaghetti</p>
+             <p class="dish-price">41.10 $</p>
+            </div>
+           </div>
+        </div>
+      </div>
+      <!-- Drinks -->
+      <div class="m-items-slide m-items-slide6">
+        <div class="m-items-container">
+          <div class="dish">
+           <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/drinks/drinks1.png" alt="">
+           </div>
+           <div class="dish-text-container">
+            <p class="dish-name">Saffron Shake</p>
+            <p class="dish-price">10.30 $</p>
+           </div>
+          </div>
+          <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-new" src="./assets/new.png" alt="">
+             <img class="dish-img" src="./assets/drinks/drinks2.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Orange Juice</p>
+             <p class="dish-price">12.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/drinks/drinks3.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Strawberry Juice</p>
+             <p class="dish-price">19.39 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/drinks/drinks4.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Avocado Smoothie</p>
+             <p class="dish-price">60.30 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/drinks/drinks5.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Malted Drink</p>
+             <p class="dish-price">21.10 $</p>
+            </div>
+           </div>
+           <div class="dish">
+            <div class="dish-img-container">
+             <img class="dish-img" src="./assets/drinks/drinks6.png" alt="">
+            </div>
+            <div class="dish-text-container">
+             <p class="dish-name">Special Juice</p>
+             <p class="dish-price">41.10 $</p>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>  
 
   <!--About Us by Allerie-->
   <!--                   -->
