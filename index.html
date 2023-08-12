@@ -765,35 +765,50 @@
   <!--Sign InUp By Tanya-->
   <div id="bg-sign-in">
     <div id="sign-in-content">
-      <div id="signIn-Up-hd1" class="d-none sign-in-element">
-        <h1>Sign Up</h1>
+      <div class="d-none sign-in-element" id="signIn-Up-hd1">
+        <h1 style="color: #bfd5b6;">Sign Up</h1>
         <h6 class="signIn-Up-desc">Already have account?<a onclick="toggleSignIn()" style="color: wheat; text-decoration: underline;">
             Sign In</a></h6>
-        <button class="btn btn-google"><i class="fa fa-google"></i> | Sign Up with Google</button>
-        <form action="#">
-          <input type="text" id="email-sign-in" name="sign-in" placeholder="Email">
-          <input type="text" id="password-sign-in" name="password-sign-in" placeholder="password">
-          <input type="submit" value="Submit">
+        <button class="btn btn-light rounded-pill"><i class="fa fa-google"></i> | Sign up with Google</button>
+        <div class="divider d-flex align-items-center my-4">
+          <p style="color: white;" class="text-center fw-bold mx-3 mb-0">Or</p>
+        </div>
+        <form action="#"></form>
+        <!--       <input type="text" id="email-sign-in" name="sign-in" placeholder="Email"> -->
+        <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp" placeholder="Enter email">
+        <br>
+        <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in" placeholder="Password">
+        <br>
+        <input type="password" name="confirmpassword-sign-in" class="form-control rounded-pill" id="confirmpassword-sign-in" placeholder="Confirm password">
+        <!--       <input type="text" id="password-sign-in" name="password-sign-in" placeholder="password"> -->
+        <br>
+        <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill" type="submit" class="btn">Sign Up</button>
         </form>
       </div>
       <div class="sign-in-loco" id="signIn-Up-hd2">
-        <img src="https://marketplace.canva.com/EAFYecj_1Sc/1/0/1600w/canva-cream-and-black-simple-elegant-catering-food-logo-2LPev1tJbrg.jpg" alt="FlavorFusion-Logo" width="100%" height="auto">
+        <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
       </div>
       <div id="sign-in-line"></div>
       <div class="sign-in-element" id="signIn-Up-hd3">
-        <h1>Sign In</h1>
+        <h1 style="color: #bfd5b6;">Sign In</h1>
         <h6 class="signIn-Up-desc">Don't have an account yet?<a onclick="toggleSignUp()" style="color: wheat; text-decoration: underline;">
             Sign Up</a></h6>
-        <button class="btn btn-google"><i class="fa fa-google"></i> | Sign In with Google</button>
+        <button class="btn btn-light rounded-pill"><i class="fa fa-google"></i> | Sign In with Google</button>
+        <div class="divider d-flex align-items-center my-4">
+          <p style="color: white;" class="text-center fw-bold mx-3 mb-0">Or</p>
+        </div>
         <form action="#"></form>
-        <input type="text" id="email-sign-in" name="sign-in" placeholder="Email">
-        <input type="text" id="password-sign-in" name="password-sign-in" placeholder="password">
-        <a href="#">Forget Password?</a>
-        <input type="submit" value="Submit">
+        <!--       <input type="text" id="email-sign-in" name="sign-in" placeholder="Email"> -->
+        <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp" placeholder="Enter email">
+        <br>
+        <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in" placeholder="Password">
+        <!--       <input type="text" id="password-sign-in" name="password-sign-in" placeholder="password"> -->
+        <br>
+        <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill" type="submit" class="btn">Sign In</button>
         </form>
       </div>
       <div class="d-none sign-in-loco" id="signIn-Up-hd4">
-        <img src="https://marketplace.canva.com/EAFYecj_1Sc/1/0/1600w/canva-cream-and-black-simple-elegant-catering-food-logo-2LPev1tJbrg.jpg" alt="FlavorFusion-Logo" width="100%" height="auto">
+        <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
       </div>
     </div>
   </div>
