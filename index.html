@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./menu.css" />
   <link rel="stylesheet" href="./track-sam.css" />
   <link rel="stylesheet" href="./css/signInUp.css" />
+  <link rel="stylesheet" href="./css/allstyle.css">
 </head>
 
 <body>
@@ -28,20 +29,20 @@
   <!--Navbar By Navuuu-->
   <header class="l-header" id="header">
     <nav class="nav bd-container">
-      <a href="#" class="nav__logo">FlavoursFusion</a>
+      <a href="#" class="nav__logo">FlavourFusion</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#home" class="nav__link active-link" id="home-btn">Home</a>
           </li>
           <li class="nav__item">
-            <a href="#menu" class="nav__link" id="menu-btn">Menu</a>
+            <a href="#" class="nav__link" id="menu-btn">Menu</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
+            <a href="#allaboutus" class="nav__link" id="allab">About</a>
           </li>
           <li class="nav__item">
-            <a href="#order-landing" class="nav__link">Orders</a>
+            <a href="#order-landing" class="nav__link"id="aboutLink">Orders</a>
           </li>
           <!--Tanya added some class-->
           <li class="nav__item">
@@ -802,53 +803,91 @@
       </div>
     </div>  
 
-  <!--About Us by Allerie-->
-  <!--                   -->
-
   <!--Order Food by Sam-->
 
   <!--Tracking Food by Sam-->
 
   <!--Order History By Anay-->
-  <!--========== Footer By Navuuu ==========-->
-  <footer class="footer section">
-    <div class="footer__container bd-container bd-grid">
-      <div class="footer__content">
-        <h3 class="footer__title">
-          <a href="#" class="footer__logo">FlavorsFusion</a>
-        </h3>
-        <p class="footer__description">Providing Quality!</p>
-      </div>
+  
 
-      <div class="footer__content">
-        <h3 class="footer__title">Explore</h3>
-        <ul>
-          <li><a href="#" class="footer__link">Sign In</a></li>
-          <li><a href="#" class="footer__link">Menu</a></li>
-          <li><a href="#" class="footer__link">Orders</a></li>
-        </ul>
-      </div>
+  
 
-      <div class="footer__content">
-        <h3 class="footer__title">Our Company</h3>
-        <ul>
-          <li><a href="#" class="footer__link">About Us</a></li>
-          <li><a href="#" class="footer__link">Recipes</a></li>
-          <li><a href="#" class="footer__link">Home</a></li>
-        </ul>
-      </div>
+  <!--About us by Allerie and Anay-->
+  <section id="allaboutus">
+    <div class="close-button" id="closeButton">X</div>
+  <div class="allcontainer">
+    <!-- Centered "About Us" heading -->
+    <h2 class="allh2">About Us</h2>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Social</h3>
-        <a href="#" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
-        <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
+    <!-- Section 1 -->
+    <div class="allsection">
+      <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1">
+      <div class="allcontent">
+        <h3>Nurtured by Local Farmers</h3>
+        <p>At Harvest Haven, we believe in the symbiotic relationship between the land and our tables. Our restaurant's foundation rests upon the hard work and dedication of local farmers who cultivate the organic produce we proudly serve. We collaborate closely with these passionate individuals who share our commitment to sustainable practices, ensuring that every dish tells a story of community, growth, and respect for nature.</p>
       </div>
     </div>
+    <hr>
+    
+    <!-- Section 2 -->
+    <div class="allsection allanay2">
+      <div class="allcontent">
+        <h3>Cultivating Goodness from Seed to Plate</h3>
+        <p>Our restaurant embodies a living testament to the cycle of growth and harvest. Step into our garden, where rows of vibrant greens and fragrant herbs flourish under the sun's embrace. We take immense pride in cultivating our own organic produce, carefully tending to each plant from seed to plate.</p> 
+      </div>
+      <img class="allimg"  src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3">
+    </div>
+    <hr>
+    
+    <!-- Section 3 -->
+    <div class="allsection">
+      <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2">
+      <div class="allcontent">
+        <h3>The Essence of Organic Ingredients</h3>
+        <p>Nature's bounty takes center stage in our culinary creations. We source only the finest organic ingredients, meticulously selected to bring you flavors that burst with authenticity and nourishment. </p>
+      </div>
+    </div>
+    </div>
+  </section>
 
-    <p class="footer__copy">&#169; 2023 FlavorsFusion. All right reserved</p>
-  </footer>
+<!--========== Footer By Navuuu ==========-->
+<footer class="footer section">
+  <div class="footer__container bd-container bd-grid">
+    <div class="footer__content">
+      <h3 class="footer__title">
+        <a href="#" class="footer__logo">FlavourFusion</a>
+      </h3>
+      <p class="footer__description">Providing Quality!</p>
+    </div>
 
+    <div class="footer__content">
+      <h3 class="footer__title">Explore</h3>
+      <ul>
+        <li><a href="#" class="footer__link">Sign In</a></li>
+        <li><a href="#" class="footer__link">Menu</a></li>
+        <li><a href="#" class="footer__link">Orders</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__content">
+      <h3 class="footer__title">Our Company</h3>
+      <ul>
+        <li><a href="#" class="footer__link">About Us</a></li>
+        <li><a href="#" class="footer__link">Recipes</a></li>
+        <li><a href="#" class="footer__link">Home</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__content">
+      <h3 class="footer__title">Social</h3>
+      <a href="#" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
+      <a href="#" class="footer__social"><i class="bx bxl-twitter"></i></a>
+      <a href="#" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
+    </div>
+  </div>
+
+  <p class="footer__copy">&#169; 2023 FlavourFusion. All right reserved</p>
+</footer>
   <!-- CDN link for Swiper - JS (by Naima) -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <!-- Boostrap By Tanya -->
@@ -864,6 +903,7 @@
   <script src="./order.js"></script>
   <script src="./track-sam.js"></script>
   <script src="./javascript/signInUp.js"></script>
+  <script src="./allindex.js"></script>
 </body>
 
 </html>
