@@ -33,5 +33,4 @@ const targetOrder2 = document.getElementById("aboutLink");
         targetItem.style.display = "block";
         targetMenu.style.display = "none";
         targetDiv.style.display = "none";
-
-    }
+    };
