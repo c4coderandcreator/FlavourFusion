@@ -11,7 +11,6 @@ const targetOrder = document.querySelector(".order-landing");
 const targetOrder2 = document.getElementById("aboutLink");
 const orderHistory = document.querySelector(".ahead");
 const anorderlink = document.querySelector(".anorderlink");
-const orderSectionVisibility = document.getElementById("order-landing");
 const homelink = document.querySelector(".home");
 const homelink2 = document.querySelector(".food-fact");
 
