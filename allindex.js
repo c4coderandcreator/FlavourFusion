@@ -9,6 +9,12 @@ const targetMenu = document.querySelector(".menu-naima");
 const targetMenu2 = document.getElementById("menu-btn");
 const targetOrder = document.querySelector(".order-landing");
 const targetOrder2 = document.getElementById("aboutLink");
+const orderHistory = document.querySelector(".ahead");
+const anorderlink = document.querySelector(".anorderlink");
+const orderSectionVisibility = document.getElementById("order-landing");
+const homelink = document.querySelector(".home");
+const homelink2 = document.querySelector(".food-fact");
+
 
 
     about.onclick = function () {
@@ -18,20 +24,32 @@ const targetOrder2 = document.getElementById("aboutLink");
             targetItem.style.display = "none";
             targetFoot.style.display = "block";
             targetMenu.style.display = "none";
-            targetDiv.style.display = "block";  
+            targetDiv.style.display = "block"; 
+            orderHistory.style.display = "none";
           };
     alhome.onclick = function () {
             targetDiv.style.display = "none";
             targetFoot.style.display = "block";
+            orderHistory.style.display = "none";
+            homelink.style.display = "block";
+            homelink2.style.display = "block";
           };
     targetMenu2.onclick = function () {
             targetDiv.style.display = "none";
             targetFoot.style.display = "block";
+            orderHistory.style.display = "none";
     };
     targetOrder2.onclick = function() {
         targetOrder.style.display = "block";
         targetItem.style.display = "block";
         targetMenu.style.display = "none";
         targetDiv.style.display = "none";
+        orderHistory.style.display = "none";
+    };
+ anorderlink.onclick = function () {
+  orderHistory.style.display = "block";
+  homelink.style.display = "none";
+  homelink2.style.display = "none";
+  orderHistory.style.marginTop = "0"
 
-    }
+ }

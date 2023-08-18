@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./track-sam.css" />
   <link rel="stylesheet" href="./css/signInUp.css" />
   <link rel="stylesheet" href="./css/allstyle.css">
+  <link rel="stylesheet" href="./anorder.css"> 
 </head>
 
 <body>
@@ -149,7 +150,7 @@
         </div>
       </div>
     </section>
-
+<!--Sam's Section-->
     <section id="sam" class="container-sam">
       <button id="close-sam-section">X</button>
       <div class="main-head-sam">
@@ -338,7 +339,7 @@
         <div class="order-landing__data">
           <img src="./assets/order-history-image-landing.jpg" alt="history" class="order-landing__img" />
           <h3 class="order-landing__title">See What You've Ordered!</h3>
-          <a href="#" class="landing-button landing-button-link">Order History</a>
+          <a href="#" class="anorderlink landing-button landing-button-link">Order History</a>
         </div>
 
         <div class="order-landing__data">
@@ -808,7 +809,24 @@
   <!--Tracking Food by Sam-->
 
   <!--Order History By Anay-->
+  <div id="dotta2" class="ahead">
+    <h1 class="antop">Order History</h1>
+    <div class="orderresponse">
+    <div>
+     
+        <span class="ansearch1">By Date:  <input class="orinput" type="date" id="datePicker">
+      <button id="searchButton">Search</button></span>
   
+    </div> 
+      <div>
+        
+      <span class="ansearch2">By Cafe: <input class="orinput" type="text" placeholder="">
+      <button id="searchButton">Search</button> </span>
+  
+    </div>  
+    </div>
+<div id="orderHistory"></div>
+</div>
 
   
 
@@ -904,6 +922,7 @@
   <script src="./track-sam.js"></script>
   <script src="./javascript/signInUp.js"></script>
   <script src="./allindex.js"></script>
+  <script src="./anorder.js"></script>
 </body>
 
 </html>
