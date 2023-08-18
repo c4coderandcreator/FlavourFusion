@@ -9,15 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Simulated order history data
     const orderHistoryData = [
-      { date: "2023-08-17", order: " #12345 Salmon Salad x2, StoreName: FlavourFusion" },
-      { date: "2023-08-17", order: " #12345 Fruit Salad x2,  StoreName: FlavourFusion" },
-      { date: "2023-08-16", order: " #12345 Salmon Salad x2, StoreName: FlavourFusion" },
-      { date: "2023-08-16", order: " #12345 Fruit Salad x2,  StoreName: FlavourFusion" },
-      { date: "2023-08-16", order: " #12345 Sphgetti x3,     StoreName: FlavourFusion" },
-      { date: "2023-08-16", order: " #12345 Pizaa x3,        StoreName: FlavourFusion" },
-      { date: "2023-08-18", order: " #12345 Fruit Salad x2,  StoreName: FlavourFusion" },
-      { date: "2023-08-18", order: " #12345 Sphgetti x3,     StoreName: FlavourFusion" },
-      { date: "2023-08-18", order: " #12345 Pizaa x3,        StoreName: FlavourFusion" },
+      { date: "2023-08-17", order: " #12345 Salmon Salad x2, StoreName: FlavorFusion" },
+      { date: "2023-08-17", order: " #12345 Fruit Salad x2,  StoreName: FlavorFusion" },
+      { date: "2023-08-16", order: " #12345 Salmon Salad x2, StoreName: FlavorFusion" },
+      { date: "2023-08-16", order: " #12345 Fruit Salad x2,  StoreName: FlavorFusion" },
+      { date: "2023-08-16", order: " #12345 Spaghetti x3,     StoreName: FlavorFusion" },
+      { date: "2023-08-16", order: " #12345 Pizza x3,        StoreName: FlavorFusion" },
+      { date: "2023-08-18", order: " #12345 Fruit Salad x2,  StoreName: FlavorFusion" },
+      { date: "2023-08-18", order: " #12345 Spaghetti x3,     StoreName: FlavorFusion" },
+      { date: "2023-08-18", order: " #12345 Pizza x3,        StoreName: FlavorFusion" },
       // ... (more data)
     ];
   
