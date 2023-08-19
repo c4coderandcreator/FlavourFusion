@@ -25,26 +25,3 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
-
-/*==================== Scroll Reveal Animation ====================*/
-const sr = ScrollReveal({
-    distance: '30px',
-    duration: 1800,
-    reset: true,
-});
-
-sr.reveal(`.home__data, .home__img, 
-           .order-landing__data,
-           .footer__content`, {
-    origin: 'top',
-    interval: 200,
-})
-
-sr.reveal(`.food-fact__img, .send__content`, {
-    origin: 'left'
-})
-
-sr.reveal(`.food-fact__data, .send__img`, {
-    origin: 'right'
-})
-
