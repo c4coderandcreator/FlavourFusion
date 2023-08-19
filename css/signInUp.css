@@ -1,3 +1,4 @@
+
 #bg-sign-in {
   background-image: url("https://images.unsplash.com/photo-1524222717473-730000096953?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80%22");
   background-repeat: no-repeat;
@@ -11,6 +12,7 @@
 }
 
 #sign-in-content {
+  filter: blur(-4px);
   width: 65%;
   background-color: rgb(75, 91, 62);
   margin-top: 10%;
