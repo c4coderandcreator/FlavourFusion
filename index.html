@@ -43,9 +43,11 @@
             <a href="#allaboutus" class="nav__link" id="allab">About</a>
           </li>
           <li class="nav__item">
+            <a href="#recipes" class="nav__link">Recipes</a>
+          </li>
+          <li class="nav__item">
             <a href="#order-landing" class="nav__link"id="aboutLink">Orders</a>
           </li>
-          <!--Tanya added some class-->
           <li class="nav__item">
             <a href="#sign-in" onClick="clickSignInButton()" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign In</a>
           </li>
@@ -60,8 +62,8 @@
   <div id="bg-sign-in" class="d-none">
     <div id="sign-in-content">
       <div class="d-none sign-in-element" id="signIn-Up-hd1">
-        <h1 style="color: #bfd5b6;">Sign Up</h1>
-        <h6 class="signIn-Up-desc">Already have account?<a onclick="toggleSignIn()" style="color: wheat; text-decoration: underline;">
+        <h1 style="color: #bfd5b6; margin-bottom: 0.5rem;">Sign Up</h1>
+        <h6 class="signIn-Up-desc">Already have account?<a onclick="toggleSignIn()" class="changeCursor" style="color: wheat; text-decoration: underline;">
             Sign In</a></h6>
         <button class="btn btn-light rounded-pill"><i class="fa fa-google"></i> | Sign up with Google</button>
         <div class="divider d-flex align-items-center my-4">
@@ -76,7 +78,7 @@
         <input type="password" name="confirmpassword-sign-in" class="form-control rounded-pill" id="confirmpassword-sign-in" placeholder="Confirm password">
         <!--       <input type="text" id="password-sign-in" name="password-sign-in" placeholder="password"> -->
         <br>
-        <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill" type="submit" class="btn">Sign Up</button>
+        <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill loginBtn" type="submit" class="btn">Sign Up</button>
         </form>
       </div>
       <div class="sign-in-loco" id="signIn-Up-hd2">
@@ -84,8 +86,8 @@
       </div>
       <div id="sign-in-line"></div>
       <div class="sign-in-element" id="signIn-Up-hd3">
-        <h1 style="color: #bfd5b6;">Sign In</h1>
-        <h6 class="signIn-Up-desc">Don't have an account yet?<a onclick="toggleSignUp()" style="color: wheat; text-decoration: underline;">
+        <h1 style="color: #bfd5b6; margin-bottom: 0.5rem;">Sign In</h1>
+        <h6 class="signIn-Up-desc">Don't have an account yet?<a onclick="toggleSignUp()" class="changeCursor" style="color: wheat; text-decoration: underline;">
             Sign Up</a></h6>
         <button class="btn btn-light rounded-pill"><i class="fa fa-google"></i> | Sign In with Google</button>
         <div class="divider d-flex align-items-center my-4">
@@ -98,7 +100,7 @@
         <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in" placeholder="Password">
         <!--       <input type="text" id="password-sign-in" name="password-sign-in" placeholder="password"> -->
         <br>
-        <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill" type="submit" class="btn">Sign In</button>
+        <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill loginBtn" type="submit">Sign In</button>
         </form>
       </div>
       <div class="d-none sign-in-loco" id="signIn-Up-hd4">
