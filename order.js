@@ -25,15 +25,15 @@ const closeSamSec = document.getElementById("close-sam-section")
 
 
 closeSamSec.addEventListener("click", () => {
-  content.classList.remove("active");
+  content.classList.remove("active-sam");
 });
 
 order.addEventListener("click", () => {
-  content.classList.add("active");
+  content.classList.add("active-sam");
 });
 
 reset.addEventListener("click", () => {
-  content.classList.remove("active");
+  content.classList.remove("active-sam");
 });
 
 // Add to cart functionality
