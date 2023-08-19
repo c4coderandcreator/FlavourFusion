@@ -22,6 +22,14 @@
   align-items: center;
 }
 
+.changeCursor:hover {
+  cursor: pointer;
+}
+
+.loginBtn:hover {
+  background-color: #aac7a3 !important;
+}
+
 .sign-in-loco {
   width: 30%;
   margin-top: 10%;
@@ -252,6 +260,27 @@
   .closeBtn {
     top: 23%;
     right: 3rem;
+  }
+
+}
+
+@media (max-width: 280px) {
+
+  .sign-in-loco,
+  #sign-in-line {
+    display: none;
+    margin-bottom: 5%;
+  }
+
+  .sign-in-element {
+    width: 77%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .closeBtn {
+    top: 23%;
+    right: 2rem;
   }
 
 }

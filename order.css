@@ -117,7 +117,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 10%;
   width: 70%;
   height: 70%;
   padding-left: 15%;
@@ -125,10 +124,13 @@ body {
 .description-sam h3 {
   font-size: 0.8rem;
   font-weight: 600;
+  padding: 0 !important;
+  text-align: left;
 }
 .description-sam p {
   font-size: 0.8rem;
   font-weight: 400;
+  margin: 0 !important;
 }
 .item-sam {
   display: flex;
@@ -143,7 +145,7 @@ body {
   outline: none;
   border-radius: 50%;
   background-color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   padding: 20% 25%;
@@ -154,7 +156,7 @@ body {
   transform: translateX(-300%);
   transition: 0.49s all ease;
 }
-.container-sam.active {
+.container-sam.active-sam {
   transform: translateX(0%);
 }
 .order-sam {
@@ -233,14 +235,14 @@ body {
   }
 }
 @media (max-width: 1024px) and (min-width: 780px) {
-  #close-sam-section{
+  #close-sam-section {
     top: 25%;
     right: 10%;
   }
   .head-content-sam {
     padding: 5px;
   }
-  .container-sam.active {
+  .container-sam.active-sam {
     height: 100vh;
   }
   .main-head-sam {
@@ -249,7 +251,7 @@ body {
   }
   .checkout-sam {
     margin-left: 0rem;
-    height: 20%;
+    height: 40%;
     width: 35%;
   }
   .checkout-sam h1 {
@@ -257,7 +259,7 @@ body {
   }
 }
 @media (max-width: 780px) and (min-width: 612px) {
-  .container-sam.active {
+  .container-sam.active-sam {
     width: 100%;
     height: 100vh;
   }
@@ -289,15 +291,24 @@ body {
   .checkout-btn-sam {
     font-size: 0.9rem;
   }
+  .food-content-sam img {
+    height: 85% !important;
+  }
 }
 @media (max-width: 612px) {
-
-  #close-sam-section{
+  .main-head-sam {
+    width: 85%;
+    height: 60%;
+  }
+  #close-sam-section {
     top: 6%;
     right: 10%;
   }
+  .food-content-sam img {
+    height: 100% !important;
+  }
 
-  .container-sam.active {
+  .container-sam.active-sam {
     width: 100%;
     height: 100vh;
     flex-direction: column;
@@ -316,8 +327,9 @@ body {
     padding: 0;
   }
   .description-sam h3 {
-    font-size: 0.9rem;
+    font-size: 0.7rem !important;
     line-height: 100%;
+    padding: 5% !important;
   }
   .description-sam p {
     font-size: 0.8rem;
@@ -339,5 +351,16 @@ body {
   }
   .checkout-sam h2 {
     font-size: 0.9rem;
+  }
+  .item-sam button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 0.6rem !important;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 20% 25%;
+    color: white;
   }
 }
