@@ -52,6 +52,8 @@ const mediaQuery = window.matchMedia('(max-width: 868px)');
  }
  if (mediaQuery.matches) {
   orderHistory.style.marginTop = '15%';
+  orderHistory.style.display = 'flex';
+  
 } else {
-  orderHistory.style.marginTop = '8%';
+  orderHistory.style.marginTop = '10%';
 }

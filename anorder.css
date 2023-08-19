@@ -75,6 +75,7 @@ flex-wrap: wrap;
   }
 
   @media (max-width: 868px) {
+  
     .orderresponse{
       display: flex;
       justify-content: center;
@@ -97,7 +98,7 @@ flex-wrap: wrap;
     }
 
     .ahead{
-      display: flex;
+      display: none;
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: center;

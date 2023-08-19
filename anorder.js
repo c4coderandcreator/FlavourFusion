@@ -18,9 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
       { date: "2023-08-18", order: " #12345 Fruit Salad x2,  StoreName: FlavorFusion" },
       { date: "2023-08-18", order: " #12345 Spaghetti x3,     StoreName: FlavorFusion" },
       { date: "2023-08-18", order: " #12345 Pizza x3,        StoreName: FlavorFusion" },
-      // ... (more data)
+      // .... (more data)
     ];
-  
     // Function to filter orders and update the order history
     function updateOrderHistory(selectedDate) {
       orderHistoryContainer.innerHTML = ""; // Clear previous results
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function() {
           orderItem.textContent = `Order: ${order.order}`;
           orderList.appendChild(orderItem);
         });
-  
         const orderDate = document.createElement("p");
         orderDate.textContent = `Date: ${selectedDate}`;
         orderDate.classList.add("highlighted");
@@ -44,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
         orderHistoryContainer.appendChild(orderList);
       }
     }
-  
     // Set up the initial order history display
     updateOrderHistory(currentDate);
   
