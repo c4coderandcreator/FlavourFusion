@@ -42,14 +42,14 @@
 }
 
   /* Style for the section headings */
-  h3 {
+  .allh3 {
     margin: 0;
     position: relative;
     padding-bottom: 10px;
   }
 
   /* Style for paragraphs */
-   p {
+   .allp {
     margin: 10px 0;
   }
 
@@ -81,13 +81,13 @@
       justify-content: center;
       align-items: center;
     }
-    h3{
+    .allh3{
       text-align: center;
     }
-    p{
+    .allp{
      font-size: 10px;
     }
-    h3{
+    .allh3{
       font-size: 13px;
     }
     .allimg{
