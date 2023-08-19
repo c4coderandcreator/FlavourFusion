@@ -13,6 +13,7 @@ const orderHistory = document.querySelector(".ahead");
 const anorderlink = document.querySelector(".anorderlink");
 const homelink = document.querySelector(".home");
 const homelink2 = document.querySelector(".food-fact");
+const mediaQuery = window.matchMedia('(max-width: 868px)');
 
 
 
@@ -45,10 +46,12 @@ const homelink2 = document.querySelector(".food-fact");
         targetDiv.style.display = "none";
         orderHistory.style.display = "none";
     };
- anorderlink.onclick = function () {
+  anorderlink.onclick = function () {
   orderHistory.style.display = "block";
-  homelink.style.display = "none";
-  homelink2.style.display = "none";
-  orderHistory.style.marginTop = "0"
-
+  targetItem.style.display = "none";
  }
+ if (mediaQuery.matches) {
+  orderHistory.style.marginTop = '15%';
+} else {
+  orderHistory.style.marginTop = '8%';
+}

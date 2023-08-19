@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
         const orderDate = document.createElement("p");
         orderDate.textContent = `Date: ${selectedDate}`;
-        orderDate.classList.add("highlighted"); // Add the class
+        orderDate.classList.add("highlighted");
         orderHistoryContainer.appendChild(orderDate);
         orderHistoryContainer.appendChild(orderList);
       }
