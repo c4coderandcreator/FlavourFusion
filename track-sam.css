@@ -106,7 +106,7 @@ body {
   transform: translateX(-300%);
   transition: transform 0.4s ease-in-out;
 }
-.track-container-sam.active {
+.track-container-sam.active-sam {
   transform: translateX(0%);
   transition: transform 0.4s ease-in-out;
 }
