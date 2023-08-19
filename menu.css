@@ -364,7 +364,7 @@
   .menu-dd li:hover{
     background-color: #c6fba2;
   }
-  .active{
+  .active-menu{
     background-color: #46955c;
     color: white;
   }
@@ -483,7 +483,7 @@
   .menu-dd li:hover{
     background: #c6fba2;
   }
-  .active{
+  .active-menu{
     background: #46955c;
     color: white;
   }

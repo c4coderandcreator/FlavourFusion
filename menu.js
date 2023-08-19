@@ -76,9 +76,9 @@ options.forEach(option => {
         caret.classList.remove('caret-rotate');
         menu_dd.classList.remove('menu-open');
         options.forEach(option => {
-            option.classList.remove('active');
+            option.classList.remove('active-menu');
         });
-        option.classList.add('active');
+        option.classList.add('active-menu');
 
         const slideId = option.getAttribute('data-target');
         const slides = document.querySelectorAll('.m-items-slide');
