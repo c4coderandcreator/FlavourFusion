@@ -10,8 +10,6 @@ a{
 
   /*========== Colors ==========*/
   --first-color: #DA2535;
-  --first-color-alt: #C42130;
-  --first-color-send: #DE3B49;
   --title-color: #161212;
   --text-color: #5B5757;
   --text-color-light: #8F8A8A;
@@ -282,7 +280,7 @@ img{
 .landing-button-link{
   background: none;
   padding: 10px;
-  color: black;
+  color: black !important;
   background-color: #F9F2B9;
 }
 

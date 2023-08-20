@@ -2,6 +2,7 @@
 // Page hide and show
 const homeBtn = document.querySelector("#home-btn"),
       menuBtn = document.querySelector("#menu-btn"),
+      menuFbtn = document.querySelector("#menu-footer-btn"),
       main = document.querySelector(".l-main"),
       menuNaima = document.querySelector(".menu-naima");
 
@@ -11,12 +12,14 @@ menuBtn.addEventListener("click", function(){
     homeBtn.classList.remove("active-link");
     menuBtn.classList.add("active-link");
 })
+
 homeBtn.addEventListener("click", function(){
     menuNaima.style.display="none";
     main.style.display="block";
     menuBtn.classList.remove("active-link");
     homeBtn.classList.add("active-link");
 })
+
 
 // Summer Sale
 var swiper = new Swiper(".mySwiper", {
@@ -92,3 +95,29 @@ options.forEach(option => {
         }
     });
 });
+
+
+// Footer Linking by Navuuu
+
+menuFbtn.addEventListener("click", function(){
+    main.style.display="none";
+    menuNaima.style.display="block";
+    homeBtn.classList.remove("active-link");
+    menuFbtn.classList.add("active-link");
+})
+
+homeBtn.addEventListener("click", function(){
+    menuNaima.style.display="none";
+    main.style.display="block";
+    menuFbtn.classList.remove("active-link");
+    homeBtn.classList.add("active-link");
+})
+
+const orderFbtn = document.querySelector("#order-footer-btn")
+
+orderFbtn.addEventListener("click", function(){
+    menuNaima.style.display="none";
+    main.style.display="block";
+    menuFbtn.classList.remove("active-link");
+    homeBtn.classList.add("active-link");
+})
