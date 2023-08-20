@@ -2,7 +2,9 @@
 
 const targetDiv = document.getElementById("allaboutus");
 const about = document.getElementById("allab");
+const aboutf = document.querySelector("#aboutFbtn")
 const alhome = document.getElementById("home-btn");
+const homeFbtn = document.querySelector("#homeFbtn")
 const targetItem = document.querySelector(".l-main");
 const targetFoot = document.querySelector(".footer");
 const targetMenu = document.querySelector(".menu-naima");
@@ -14,12 +16,15 @@ const anorderlink = document.querySelector(".anorderlink");
 const homelink = document.querySelector(".home");
 const homelink2 = document.querySelector(".food-fact");
 const mediaQuery = window.matchMedia('(max-width: 868px)');
+const menuF = document.getElementById("menu-footer-btn");
+const orderbtnf = document.querySelector("#order-footer-btn")
 
 
 
     about.onclick = function () {
           targetDiv.style.display = "block";
       };
+
     about.onclick = function () {
             targetItem.style.display = "none";
             targetFoot.style.display = "block";
@@ -56,3 +61,37 @@ const mediaQuery = window.matchMedia('(max-width: 868px)');
 } else {
   orderHistory.style.marginTop = '10%';
 }
+
+//Footer Linking By Navuuu
+
+
+aboutf.onclick = function () {
+  targetDiv.style.display = "block";
+};
+
+aboutf.onclick = function () {
+  targetItem.style.display = "none";
+  targetFoot.style.display = "block";
+  targetMenu.style.display = "none";
+  targetDiv.style.display = "block"; 
+  orderHistory.style.display = "none";
+};
+
+homeFbtn.onclick = function() {
+  targetOrder.style.display = "block";
+  targetItem.style.display = "block";
+  targetMenu.style.display = "none";
+  targetDiv.style.display = "none";
+  orderHistory.style.display = "none";
+};
+
+menuF.onclick = function () {
+  targetDiv.style.display = "none";
+  targetFoot.style.display = "block";
+  orderHistory.style.display = "none";}
+
+  orderbtnf.onclick = function () {
+    targetDiv.style.display = "none";
+    targetOrder.style.display = "block" 
+    targetFoot.style.display = "block";
+    orderHistory.style.display = "none"; }
