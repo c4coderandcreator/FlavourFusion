@@ -1,3 +1,20 @@
+//Import Sections
+const homeSam = document.getElementById("home");
+const homeSam2= document.getElementById("#");
+const homeSam3= document.getElementById("order-landing");
+
+//Remove content
+function removeContent(){
+  homeSam.style.display="none";
+  homeSam2.style.display="none";
+  homeSam3.style.display="none";
+}
+function revealContent(){
+  homeSam.style.display="block";
+  homeSam2.style.display="block";
+  homeSam3.style.display="block";
+}
+
 //Search bar functionality
 const searchSAM = () => {
   const searchbox = document
@@ -26,14 +43,17 @@ const closeSamSec = document.getElementById("close-sam-section")
 
 closeSamSec.addEventListener("click", () => {
   content.classList.remove("active-sam");
+  revealContent();
 });
 
 order.addEventListener("click", () => {
   content.classList.add("active-sam");
+  removeContent();
 });
 
 reset.addEventListener("click", () => {
   content.classList.remove("active-sam");
+  revealContent();
 });
 
 // Add to cart functionality

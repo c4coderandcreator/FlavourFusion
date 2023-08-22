@@ -153,11 +153,12 @@ body {
 }
 
 .container-sam {
-  transform: translateX(-300%);
-  transition: 0.49s all ease;
+  display: none;
+  transition: 0.49s ease-in-out;
 }
 .container-sam.active-sam {
-  transform: translateX(0%);
+  display: flex;
+  transition: 0.49s ease-in-out;
 }
 .order-sam {
   padding: 10px 20px;

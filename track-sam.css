@@ -93,7 +93,7 @@ body {
 }
 #close-track-section {
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 8%;
   background-color: black;
   color: white;
@@ -103,11 +103,11 @@ body {
   cursor: pointer;
 }
 .track-container-sam {
-  transform: translateX(-300%);
+  display: none;
   transition: transform 0.4s ease-in-out;
 }
 .track-container-sam.active-sam {
-  transform: translateX(0%);
+  display: flex;
   transition: transform 0.4s ease-in-out;
 }
 .track-img {
@@ -121,6 +121,11 @@ body {
   cursor: pointer;
 }
 @media (max-width: 281px) {
+  #close-track-section {
+    top: 10%;
+    right: 5%;
+    font-size: 0.7rem;
+  }
   .progress-sam {
     flex-direction: column;
   }
@@ -157,6 +162,11 @@ body {
 }
 
 @media (min-width: 281px) and (max-width: 484px) {
+  #close-track-section {
+    top: 10%;
+    right: 5%;
+    font-size: 0.7rem;
+  }
   .progress-sam {
     flex-direction: column;
   }
@@ -193,6 +203,11 @@ body {
 }
 
 @media (min-width: 484px) and (max-width: 684px) {
+  #close-track-section {
+    top: 10%;
+    right: 5%;
+    font-size: 0.8rem;
+  }
   .progress-sam {
     flex-direction: column;
   }
